@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Personal Information</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1800px">
+  <img class="w3-image" src="https://www.10wallpaper.com/wallpaper/1366x768/1812/Switzerland_Snow_Mountains_Bachalpsee_Lake_1366x768.jpg" alt="Me" width="1500" height="600">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">{{data.first_name | uppercase}} {{data.last_name | uppercase}}</h1>
+    <h3 class="w3-hide-medium w3-hide-small">DEVELOPER</h3>
+        <div class="w3-panel">
+                <div class="w3-row-padding" style="margin:0 -16px">
+                  <div class="w3-third">
+                    <img src="{{data.image_url}}" style="width:100%" class="avatar">
+                  </div>
+                  <div class="w3-twothird">
+                    <h5>Personal Data</h5>
+                    <table class="w3-table w3-striped w3-white">
+                      <tr>
+                        <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+                        <td>First Name</td>
+                        <td><i>{{data.first_name}}</i></td>
+                      </tr>
+                      <tr>
+                        <td><i class="fa fa-user w3-text-red w3-large"></i></td>
+                        <td>Last Name</td>
+                        <td><i>{{data.last_name}}</i></td>
+                      </tr>
+                      <tr>
+                        <td><i class="fa fa-comment w3-text-red w3-large"></i></td>
+                        <td>Login</td>
+                        <td><i>{{data.login}}</i></td>
+                      </tr>
+                      <tr>
+                        <td><i class="fa fa-laptop w3-text-red w3-large"></i></td>
+                        <td>Email</td>
+                        <td><i>{{data.email}}</i></td>
+                      </tr>
+                      <tr>
+                        <td><i class="fa fa-share-alt w3-text-green w3-large"></i></td>
+                        <td>Url</td>
+                        <a href="https://profile.intra.42.fr/users/{{data.login}}"><td><i>url profile</i></td></a>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+  </div>
+
+</header>
+    
+</body>
+</html>
